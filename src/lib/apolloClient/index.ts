@@ -3,7 +3,7 @@ import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = new HttpLink({
-  uri: "https://api.gr.axra.app/v1/graphql", 
+  uri: "", //add hasura cloud url
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
